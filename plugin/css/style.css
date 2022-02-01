@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css');
+
+
+/* ============================================
+                    variables  
+===============================================*/
+:root {
+    --color-green-rgba: 24, 147, 60;
+    --color-green-decimal: #04361e;
+    --color-black-decimal: #000;
+    --color-orange-decimal: #d64d2a;
+    --color-preload: 29, 24, 24, 0.5;
+    --color-red-decimal: #f80505;
+    --color-white-decimal: #fff;
+
+}
+
+
+
+/* ============================================
+                    globals  
+===============================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-transform: uppercase;
+}
+
+
+/* ============================================
+                end globals  
+===============================================*/
+
+
+/* ============================================
+                    preload page
+===============================================*/
+
+.preload-page {
+    background: rgba(var(--color-preload));
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+canvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.cerrar {
+    transform: translateY(-100%);
+    transition: all 0.5s;
+}
+
+/* ============================================
+                    end globals  
+===============================================*/
+
+
+/* ============================================
+                    image-header  
+===============================================*/
+
+.bg-image__pizza {
+    position: absolute;
+    right: 864px;
+    width: 750px;
+    bottom: 404px;
+
+}
+
+.hourDate {
+    text-align: end;
+    margin-right: 12px;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.hourDate__date {
+    margin-right: 15px;
+}
+
+/* ============================================
+                    end image-header  
+===============================================*/
+
+/* ============================================
+                    TITLE AND LOGO  
+===============================================*/
+
+.app-theme__brand-img {
+    width: 250px;
+}
+
+.app-theme__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ============================================
+                    end TITLE AND LOGO  
+===============================================*/
+
+/* ============================================
+                    MAIN  
+===============================================*/
+.categories__item__list {
+    margin-top: 50px;
+}
+
+
+.categories__item {
+    position: relative;
+    width: calc(10% - -111px);
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.categorie__item--circle {
+    width: 150px;
+    height: 150px;
+    border: 4px solid rgb(var(--color-green-rgba));
+    border-top: 4px solid var(--color-green-decimal);
+    border-radius: 50%;
+    /* transform-origin: 100px 100px; */
+    transition: transform 2s cubic-bezier(0.620, 0.005, 0.000, 1.005);
+}
+
+.img-item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    border-radius: 50%;
+    margin: 25px;
+}
+
+.categorie__item--text {
+    font-weight: 700;
+    margin-right: 75px;
+    margin-top: 10px;
+    color: var(--color-black-decimal);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.categories__item:hover .categorie__item--circle {
+    transform: rotate(360deg);
+}
+
+/* ============================================
+                    MAIN
+===============================================*/
+
+/* ============================================
+                    EMPLOYERS HEADERS
+===============================================*/
+
+.icon-close {
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+    top: 3rem;
+    font-size: 2rem;
+    color: var(--color-orange-decimal);
+
+}
+
+.icon-close::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f057";
+}
+
+.bg-image__pizza--employees, .bg-image__pizza--customers {
+    position: absolute;
+    right: 815px;
+    width: 550px;
+    bottom: 505px;
+}
+
+
+.categories__item--employees {
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    margin: 0 auto;
+}
+
+.categories__item--employees .categorie__item--circle_employees {
+    width: 60px;
+    height: 60px;
+    border: 4px solid rgb(var(--color-green-rgba));
+    border-top: 4px solid var(--color-green-decimal);
+    border-radius: 50%;
+    /* transform-origin: 100px 100px; */
+    transition: transform 2s cubic-bezier(0.620, 0.005, 0.000, 1.005);
+}
+
+.categories__item--employees .img-item {
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    width: 40px;
+    border-radius: 50%;
+    /* margin: 25px; */
+}
+
+.categories__item--employees:hover .categorie__item--circle_employees {
+    transform: rotate(360deg);
+}
+
+/* ============================================
+                    END EMPLOYERS HEADERS
+===============================================*/
+
+/* ============================================
+                    EMPLOYERS TABLE AND BUTTONS
+===============================================*/
+
+td {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.employes--input label {
+    font-weight: 500;
+}
+
+input[type="search"], .form-select, input[type="text"] {
+    width: 100%;
+    padding: 4px 1.6rem;
+}
+
+.btn-group-vertical {
+    margin-top: 70px;
+}
+
+.btn__employes {
+    padding: 1.5rem;
+    width: 200px !important;
+    margin-bottom: 35px;
+    border-radius: 10px !important;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.btn__employes--green {
+    border: 2px solid var(--color-green-decimal);
+}
+
+.btn__employes--red {
+    border: 2px solid var(--color-red-decimal);
+}
+
+/* ============================================
+                    END EMPLOYERS TABLE AND BUTTONS
+===============================================*/
+
+/* ============================================
+                    CUSTOMERS TABLE AND BUTTONS
+===============================================*/
+.form__customer {
+    border: solid 1px var(--color-black-decimal);
+    border-radius: 40px;
+    padding: 2rem;
+    margin-left: 20px;
+}
+
+.form_customer__code .number_code {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form__customer label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.form__customer .form-control {
+    padding: 0.1rem;
+    border-radius: 0.25rem;
+}
+
+.form__customer--btn, .form__customer--btn_table {
+    font-size: 15px;
+    font-family: Verdana, Helvetica;
+    font-weight: bold;
+    color: var(--color-white-decimal);
+    border: 0px;
+    width: 150px;
+    height: 30px;
+    margin-right: 100px;
+}
+
+.form__customer--btn_table {
+    margin-right: 0;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.btn-sear {
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.table_customers {
+    border: solid 1px #000;
+    border-radius: 40px;
+    padding: 2rem;
+    margin-left: 20px;
+}
+
+
+/* ============================================
+                    END CUSTOMERS TABLE AND BUTTONS
+===============================================*/
+
+
+
+
+/* =========================================
+QUERYS
+============================================== */
+
+@media (max-width: 1199px) and (min-width: 992px) {}
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+    /* ============================================
+                    image-header  
+===============================================*/
+
+    .bg-image__pizza {
+        position: absolute;
+        left: -135px;
+        width: 360PX;
+        top: -85px;
+    }
+
+
+    /* ============================================
+            end image-header  
+===============================================*/
+    .categories__item__list {
+        margin-top: 25%;
+    }
+
+    .categories__item {
+        width: calc(5% - -100px);
+    }
+
+    .categorie__item--circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .img-item {
+        width: 69px;
+    }
+
+    .categorie__item--text {
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .form__customer, .table_customers{
+        width: 100%!important;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    /* ============================================
+                    image-header  
+===============================================*/
+
+    .bg-image__pizza {
+        position: absolute;
+        right: 290px;
+        width: 160PX;
+        top: -45px;
+
+    }
+
+    /* ============================================
+                end image-header  
+===============================================*/
+
+    .categories__item {
+        width: calc(5% - -170px);
+    }
+
+    .categorie__item--text {
+        font-weight: 700;
+        margin-right: 32px;
+        margin-top: 10px;
+        color: #000;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .icon-close{
+        margin-right: 10px;
+    }
+
+    .form__customer--btn, .form__customer--btn_table{
+        margin-right: 5px;
+    }
+
+    .bg-image__pizza--employees, .bg-image__pizza--customers {
+        position: absolute;
+        left: -50px;
+        width: 160px;
+        top: -60px;
+    }
+
+    .btn-group-vertical{
+        margin-top: 0;
+    }
+}

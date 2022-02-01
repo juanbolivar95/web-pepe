@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>PEPE PIZZA</title>
+
+    <!-- ESTILOS BOOTSTRAPP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ESTILOS PROPIOS -->
+    <link rel="stylesheet" href="./plugin/css/style.css">
+</head>
+
+<body>
+
+    <!-- page preload -->
+
+    <div class="preload-page" id="preload-page">
+        <canvas id="pizza"></canvas>
+    </div>
+
+    <!-- end page preload -->
+
+    <!-- IMAGE HEADER -->
+    <div class="bg-image">
+        <img src="./plugin/image/customers.png" class="bg-image__pizza--employees">
+    </div>
+    <!-- END IMAGE HEADER -->
+
+
+    <!-- hour and date -->
+    <div class="hourDate">
+        <span class="hourDate__date">Fecha: 23-10-2022</span><span> Hora: 15:07</span>
+    </div>
+    <!-- end hour and date -->
+
+    <!-- CONTAINER PAGE -->
+    <div class="container-fluid">
+        <!-- ICON-CLOSE AND LOGO CUSTOMERS -->
+        <div style="height: 170px;">
+            <a href="/index.html">
+                <div class="icon-close"></div>
+            </a>
+
+            <div class="categories__item--employees">
+                <div class="categorie__item--circle_employees">
+                </div>
+                <img src="plugin/image/item1.png" alt="" class="img-item">
+                <h2 class="categorie__item--text">Clientes</h2>
+            </div>
+        </div>
+        <!-- END ICON-CLOSE AND LOGO CUSTOMERS -->
+
+
+        <!-- ROW PAGE -->
+        <div class="row">
+
+            <!-- FORM CUSTOMERS -->
+            <div class="col-md-7 col-sm-12 col-xs-12 form__customer">
+                <form>
+                    <div class="form_customer__code">
+                        <span class="number_code">Código: 0001</span>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <label for="">Nombre</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="col">
+                            <label for="">Apellidos</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <label for="">Móvil</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="col">
+                            <label for="">Correo</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <label for="">Dirección</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="col">
+                            <label for="">Codigo Postal</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <label for="">Población</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                        <div class="col">
+                            <label for="">Provincia</label>
+                            <input type="text" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label for="comment">Comentarios</label>
+                            <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3 justify-content-center">
+                        <!-- <div class="btn-group" role="group" aria-label="Basic mixed styles example"> -->
+                        <button type="button" class="btn btn-warning form__customer--btn">Guardar</button>
+                        <button type="button" class="btn btn-danger form__customer--btn">Cancelar</button>
+                        <!-- </div> -->
+                    </div>
+                </form>
+            </div>
+            <!-- END FORM CUSTOMERS -->
+
+            <!-- TABLE CUSTOMERS -->
+            <div class="col-md-4 col-sm-12 col-xs-12 table_customers">
+
+                <div class="btn-search--customer">
+                    <form class="d-flex">
+                        <label class="mt-2 btn-sear">Buscar</label>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+
+                    </form>
+                </div>
+
+                <div class="mt-5">
+                    <table class="table table-bordered-left text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Código</th>
+                                <th scope="col">Nombre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Sebastian</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Juan Manuel</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td colspan="2">Juan Manuel</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td colspan="2">Juan Manuel</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td colspan="2">Juan Manuel</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td colspan="2">Juan Manuel</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row mt-3 justify-content-center">
+
+                    <button type="button" class="btn btn-warning form__customer--btn_table">Nuevo Cliente</button>
+
+                </div>
+            </div>
+            <!-- END TABLE CUSTOMERS -->
+        </div>
+        <!-- END ROW PAGE -->
+    </div>
+    <!-- END CONTAINER PAGE -->
+
+    <!-- scripts de boostrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- end scripts de boostrap 5 -->
+
+
+    <!-- scripts de boostrap 5 -->
+    <script src="./plugin/js/global.js"></script>
+    <!-- end scripts de boostrap 5 -->
+</body>
+
+</html>

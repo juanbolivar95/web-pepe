@@ -1,0 +1,17 @@
+{
+    "name": "PEPE PIZZA",
+    "short_name": "PEPE PIZZA",
+    "theme_color": "#ea2046",
+    "background_color": "#ea2046",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "./",
+    "start_url": "./",
+    "icons": [
+        {
+            "src": "./plugin/image/image_icono.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

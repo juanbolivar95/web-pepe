@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>PEPE PIZZA</title>
+
+    <!-- ESTILOS BOOTSTRAPP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ESTILOS PROPIOS -->
+    <link rel="stylesheet" href="./plugin/css/style.css">
+</head>
+
+<body>
+
+    <!-- page preload -->
+
+    <div class="preload-page" id="preload-page">
+        <canvas id="pizza"></canvas>
+    </div>
+
+    <!-- end page preload -->
+
+    <!-- IMAGE HEADER -->
+    <div class="bg-image">
+        <img src="./plugin/image/customers.png" class="bg-image__pizza--employees">
+    </div>
+    <!-- END IMAGE HEADER -->
+
+
+    <!-- hour and date -->
+    <div class="hourDate">
+        <span class="hourDate__date">Fecha: 23-10-2022</span><span> Hora: 15:07</span>
+    </div>
+    <!-- end hour and date -->
+
+    <!-- CONTAINER PAGE -->
+    <div class="container-fluid">
+        <!-- ICON-CLOSE AND LOGO EMPLOYEES -->
+        <div style="height: 170px;">
+            <a href="/index.html">
+                <div class="icon-close"></div>
+            </a>
+
+            <div class="categories__item--employees">
+                <div class="categorie__item--circle_employees">
+                </div>
+                <img src="plugin/image/item1.png" alt="" class="img-item">
+                <h2 class="categorie__item--text">Camareros</h2>
+            </div>
+        </div>
+        <!-- END ICON-CLOSE AND LOGO EMPLOYEES -->
+
+
+        <!-- ROW PAGE -->
+        <div class="row">
+
+            <div class="col-md-10" style="padding: 2rem;">
+
+                <div class="row mt-3 employes--input">
+                    <div class="col">
+                        <label for="">Buscar</label>
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    </div>
+                    <div class="col">
+                        <label for="">Tipo</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione tipo...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="">Código</label>
+                        <input class="form-control me-2" type="text" placeholder="Codigo" aria-label="Search">
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">Código</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Orden</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                                <td>Jefe</td>
+                                <td>001</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                                <td>Jefe</td>
+                                <td>001</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                                <td>Jefe</td>
+                                <td>001</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                                <td>Jefe</td>
+                                <td>001</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                                <td>Jefe</td>
+                                <td>001</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                                <td>Jefe</td>
+                                <td>001</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                                <td>Jefe</td>
+                                <td>001</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                                <td>Jefe</td>
+                                <td>001</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                                <td>Jefe</td>
+                                <td>001</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Juan David</td>
+                                <td>Jefe</td>
+                                <td>001</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="col-md-2">
+                <div class="btn-group-vertical">
+                    <button class="btn btn__employes btn__employes--green">NUEVO</button>
+                    <button class="btn btn__employes btn__employes--green">MODIFICAR</button>
+                    <button class="btn btn__employes btn__employes--red">BORRAR</button>
+                    <button class="btn btn__employes btn__employes--green">EXPORTAR</button>
+                    <button class="btn btn__employes btn__employes--green">horarios</button>
+                </div>
+            </div>
+        </div>
+        <!-- END ROW PAGE -->
+    </div>
+    <!-- END CONTAINER PAGE -->
+
+    <!-- scripts de boostrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- end scripts de boostrap 5 -->
+
+
+    <!-- scripts de boostrap 5 -->
+    <script src="./plugin/js/global.js"></script>
+    <!-- end scripts de boostrap 5 -->
+</body>
+
+</html>
